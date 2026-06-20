@@ -1,41 +1,36 @@
-/* ============================================================
-   AI GYM COACH — n8n-inspired design system
-   style.css
-   ============================================================ */
 
-/* ── TOKENS ── */
 :root {
-  /* Core palette — near-black base like n8n, orange accent instead of n8n's teal */
+
   --bg:           #0d0d0f;
   --bg-raised:    #141417;
   --bg-card:      #18181c;
   --border:       rgba(255,255,255,0.08);
   --border-hover: rgba(255,255,255,0.15);
 
-  /* Accent: burnt orange — athletic, high-energy, distinct from n8n's teal */
+  
   --accent:       #ea580c;
   --accent-dim:   #9a3a07;
   --accent-glow:  rgba(234,88,12,0.18);
   --accent-light: #fb923c;
 
-  /* Secondary: deep violet glow (borrowed from n8n's dark violet BG) */
+ 
   --violet:       #7c3aed;
   --violet-glow:  rgba(124,58,237,0.12);
 
-  /* Text */
+
   --text:         #f0f0f0;
   --text-muted:   #6b7280;
   --text-dim:     #9ca3af;
 
-  /* Type */
+ 
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Spacing */
+ 
   --max-w: 1100px;
   --section-pad: 100px 40px;
 }
 
-/* ── RESET ── */
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -50,7 +45,7 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-/* ── BUTTONS ── */
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -104,7 +99,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .btn-nav:hover { background: var(--accent-light); }
 
-/* ── SECTION HELPERS ── */
+
 .section-eyebrow {
   font-size: 11px;
   font-weight: 600;
@@ -135,7 +130,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   max-width: 520px;
 }
 
-/* ── NAV ── */
+
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -176,7 +171,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   background: rgba(255,255,255,0.05);
 }
 
-/* ── HERO ── */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -262,7 +257,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   animation: fade-up 0.6s 0.22s ease both;
 }
 
-/* Stats */
+
 .hero-stats {
   display: flex;
   align-items: center;
@@ -309,7 +304,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   flex-shrink: 0;
 }
 
-/* Proof chips */
+
 .hero-proof {
   display: flex;
   gap: 10px;
@@ -336,7 +331,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   to   { opacity:1; transform: translateY(0); }
 }
 
-/* ── FEATURES ── */
+
 .features {
   position: relative;
   z-index: 1;
@@ -409,7 +404,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   line-height: 1.7;
 }
 
-/* Skeleton demo inside large card */
+
 .feat-visual {
   margin-top: 28px;
   border-radius: 10px;
@@ -470,7 +465,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   50%     { opacity:0.6; box-shadow: 0 0 0 4px transparent; }
 }
 
-/* ── WORKFLOW ── */
+
 .workflow {
   background: var(--bg-raised);
   border-top: 1px solid var(--border);
@@ -500,7 +495,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   color: var(--text-dim);
 }
 
-/* Node graph */
+
 .workflow-graph {
   display: flex;
   flex-direction: column;
@@ -590,7 +585,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .node-output--good { border-color: rgba(16,185,129,0.4); color: #34d399; }
 .node-output--fix  { border-color: rgba(234,88,12,0.4);  color: var(--accent-light); }
 
-/* ── GALLERY ── */
+
 .gallery {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -669,11 +664,11 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   to   { top: 100%; }
 }
 
-/* Large cards in gallery */
+
 .gc-1, .gc-5 { grid-column: span 1; }
 .gc-2 { grid-column: span 1; }
 
-/* ── DEMO ── */
+
 .demo {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -756,7 +751,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   animation: pulse-dot 1.5s ease-in-out infinite;
 }
 
-/* ── CONTACT ── */
+
 .contact {
   position: relative;
   border-top: 1px solid var(--border);
@@ -823,7 +818,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   transform: translateY(-2px);
 }
 
-/* FOOTER */
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -842,7 +837,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   color: #374151;
 }
 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 900px) {
   :root { --section-pad: 72px 24px; }
   .nav-links { display: none; }
